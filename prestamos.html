@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Prestamos</h1>
+    <form action="">
+        <div>
+            <label for="cantidad">ingrese la cantidad de dinero</label>
+            <input id="cantidad" type="number">
+        </div>
+       
+        <div>
+            <label for="cuotas">selecciona la cantidad de cuotas</label>
+            <select name="cuotas" id="selecCuotas">
+                <option value="10">6</option>
+                <option value="15">12</option>
+                <option value="25">18</option>
+                <option value="40">30</option>
+            </select></br>
+            <button type="button" onclick="calcularCuotas()">solicitar prestamo</button>
+        </div>
+    </form>
+    <div>
+        <p id="devolver"></p>
+        <p id="cantidadDeCuotas"></p>
+        <p id="interes"></p>
+    </div>
+    <script src="./prestamos.js"></script>
+</body>
+</html>
